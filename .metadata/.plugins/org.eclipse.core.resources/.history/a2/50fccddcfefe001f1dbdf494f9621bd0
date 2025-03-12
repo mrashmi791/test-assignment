@@ -1,0 +1,9 @@
+spring.application.name=user-managment
+
+spring.data.mongodb.uri=mongodb://localhost:27017/userdb
+spring.data.mongodb.auto-index-creation=true
+
+#spring.jackson.default-property-inclusion=NON_NULL
+
+#mongodb://localhost:27017
+
