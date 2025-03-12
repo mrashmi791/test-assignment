@@ -10,10 +10,11 @@ import com.example.demo.repository.UserRepository;
 
 
 /**
- * Service class for user data in.
+ * Service class to handle user management
  */
 @Service
 public class UserService {
+	
 	@Autowired
 	private UserRepository userRepository;
 
