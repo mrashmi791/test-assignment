@@ -16,23 +16,23 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @Builder
 public class User {
- 
-	  	@Id
-	    private String id;
 
-	    @NotBlank(message = "Name is required")
-	    private String name;
+	@Id
+	private String id;
 
-	    @Email(message = "Invalid email format")
-	    @NotBlank(message = "Email is required")
-	    private String email;
+	@NotBlank(message = "Name is required")
+	private String name;
 
-	    @Min(value = 18, message = "User must be at least 18 years old")
-	    private int age;
+	@Email(message = "Invalid email format")
+	@NotBlank(message = "Email is required")
+	private String email;
 
-	    @NotBlank(message = "Country is required")
-	    private String country;
-	    
-	 // Optional field
-	    private String phoneNumber;
+	@Min(value = 18, message = "User must be at least 18 years old")
+	private int age;
+
+	@NotBlank(message = "Country is required")
+	private String country;
+
+	// Optional field
+	private String phoneNumber;
 }

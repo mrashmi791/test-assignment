@@ -8,13 +8,12 @@ import com.example.demo.dto.UserResponseDto;
 import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
 
-
 /**
  * Service class to handle user management
  */
 @Service
 public class UserService {
-	
+
 	@Autowired
 	private UserRepository userRepository;
 
